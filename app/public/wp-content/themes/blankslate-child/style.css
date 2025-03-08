@@ -1,0 +1,964 @@
+/*
+Theme Name: blankslate-child
+Theme URI: http://planty.local
+Description: Thème enfant basé sur blankslate
+Author: Jason
+Template: BlankSlate
+Version: 1.0.0
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+/* Import de la font Syne */
+
+body {
+    font-family: 'Syne', sans-serif;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+
+    /*Header*/
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #logo {
+        justify-content: center;
+        margin-right: 30px; 
+    }
+
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menu-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .menu-item a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-left: 50%;
+        padding-right: 50%;
+    }
+
+    /*Acceuil*/
+
+    .right-leaf.right-leaf-mobile {
+        margin-top: 300px;
+    }
+
+    .left-leaf.left-leaf-mobile {
+        margin-top: 300px;
+    }
+
+    .fatiha-vero-marc.fvm-mobile {
+        width: 100%;
+    }
+
+    .text-container.text-container-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .picture-container.picture-container-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .name.name-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    /*Rencontrer*/
+
+    .flower-title.flower-title-mobile {
+        margin-top: 175px;
+    }
+
+    .flower-team.flower-team-mobile {
+        margin-top: 1000px;
+        margin-right: 50px;
+    }
+
+    .flower-contact-form.flower-contact-form-mobile {
+        margin-top: 990px;
+        margin-right: 50px;
+    }
+
+    /*Commander*/
+
+    .fruit-column.fruit-column-mobile {
+        width: 100%;
+        padding-left: 25%
+    }
+
+    .fruits-container-order {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .fruit-column-order {
+        width: 50%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fruit-column-order img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .two-columns.columns-mobile {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 100px;
+        padding-top: 45px ;
+    }
+
+    .h3-form-order.h3-mobile-delivery {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        margin-top: 0px;
+    }
+    
+    .h3-form-order.h3-mobile-info {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        margin-bottom: 875px;
+    }
+
+    .separator-vertical.separator-vertical-mobile {
+        position: absolute;
+        border-left: 0.5px solid #FFFFFF;
+        height: 0%; 
+        left: 50%; 
+    }
+
+    input[type="text"], input[type="email"], input[type="number"] {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .button-row {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .h2-order {
+        width: 100%;
+    }
+    
+    .fraise-legend-order.fra-mobile {
+        width: 22%;
+        margin-top: 390px;
+    }
+
+    .pamplemousse-legend-order.plm-mobile {
+        width: 25%;
+        margin-top: 705px;
+    }
+    
+    .framboise-legend-order.frm-mobile {
+        width: 20%;
+        margin-top: 1030px;
+    }
+    .citron-legend-order.cit-mobile {
+        width: 22%;
+        margin-top: 1360px;
+    }
+
+    .button-row-quantity {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+}
+
+
+/*MAIN*/
+
+.page .entry-title {
+    display: none;
+}
+
+/* HEADER */
+
+.header
+{
+    display: flex;
+    background-color: #ffffff;
+    font-weight: 700;
+}
+
+#logo
+{
+    margin-left: 45px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#logo .custom-logo
+{
+    height: 40px;
+    width: 202px;
+    object-fit: cover;
+}
+
+nav
+{
+    margin-right: 0;
+}
+
+nav a 
+{
+    outline: none;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul
+{
+    display: flex;
+    list-style-type: none;
+}
+
+.menu-item a
+{
+    height: 80px;
+    width: 200px;
+    background: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Commander */
+li.menu-item-32 a 
+{
+    color:#FFFFFF;
+    width: 236px;
+    height: 80px;
+    background:#DC9F96;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+li.menu-item-32 span
+{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+li.menu-item-32 a:hover 
+{
+    background-color: #C02E44;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* Admin */
+li.menu-item a:hover 
+{
+    font-weight: 700;
+    font-size: 13px;
+}
+
+
+/* Accueil */
+
+.h1-home 
+{
+    color: #3B8E46;
+    text-transform: uppercase;
+    font-family: 'Syne';
+    font-weight: 800;
+    line-height: 46px;
+    font-size: 38px;
+    padding-top: 105px;
+}
+
+.flower-left .flower-right
+{
+    flex-basis: 10%;
+}
+
+.bottle-container
+{
+    flex-basis: 80%;
+}
+
+.flower-bottle-left {
+    position: absolute;
+    top: 485px;
+    right: 735px;
+    width: 400px;
+}
+
+.flower-bottle-right{
+    position: absolute;
+    top: 485px;
+    left: 720px;
+    width: 400px; 
+}
+
+.bottle {   
+    position: relative;
+    z-index: 1;
+}
+
+.bg-grey{
+    background-color: #EDE2DA;
+}
+
+.right-leaf{
+    position: absolute;
+    left: 50%;
+    top: 500px;
+}
+
+.left-leaf{
+    position: absolute;
+    right: 50%;
+    top: 500px;
+}
+
+.rounded-corner
+{
+    border-bottom-right-radius:800px 65px;
+    border-bottom-left-radius:800px 65px;
+    box-shadow: 0px 10px 0px 1px #EDE2DA;
+    padding-bottom: 50px;
+}
+
+.bottle-flowers
+{
+    border-bottom-right-radius: 400px 50px;
+    border-bottom-left-radius: 400px 50px;
+    background : #EDE2DA;
+    margin-bottom: 30px;
+}
+
+.energy-container{
+    margin-top: -50px;
+}
+
+.h2-home{
+    color: #3B8E46;
+    padding-top: 120px;
+}
+
+.p-h2-home 
+{
+    margin-bottom: 82px;
+    padding-top: 15px;
+    line-height: 24px;
+    font-weight: 700;
+    padding-bottom: 100px;
+}
+
+.h3-home
+{
+    color : #D2776A;
+    text-transform: uppercase;
+    font-family: 'Syne';
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 36px;
+    padding-bottom: 50px;
+    padding-top: 70px;
+}
+
+.p-h3-home 
+{
+    margin-bottom: -75px;
+    margin-top: -25px;
+    font-weight: 700;
+}
+  
+.fruit-column
+{
+    background-color: #EDE2DA;
+    display: flex;
+    justify-content: center;
+    padding-top: 105px;
+}
+
+.fruit-image {
+    width: 393px;
+    height: 262px;
+}
+
+
+.legend
+{
+    color : #ffffff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.fruits-row
+{
+    margin-top: 40px;
+    margin-bottom: 17px;
+}
+
+.button a
+{
+    width: 198px;
+    height: 55px;
+    background: #E0B9B4;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.button a:hover
+{
+    background-color: #C02E44;
+    color: #FFFFFF;
+}
+
+.wp-container-15 
+{
+    border-bottom-right-radius: 400px 30px;
+    border-bottom-left-radius: 400px 30px;
+    background: #eddadf;
+    padding-bottom: 47px;
+}
+
+.h4-home
+{
+    color: #3B8E46;
+    text-transform: uppercase;
+    font-family: 'Syne';
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 80px;
+    margin-top: 190px;
+    padding-top: 105px;
+}
+
+.picture-container
+{
+    flex-basis: 35% ;
+    padding-left: 13px ;
+}
+
+.text-container
+{
+    flex-basis: 58% ;
+    padding-top: 5px;
+    padding-left: 0px ;
+}
+
+.fatiha-vero-marc
+{
+    width: 100%;
+}
+
+.picture 
+{
+    width: 125px;
+}
+
+.name
+{
+    color: #3B8E46;
+}
+
+.p-name
+{
+    line-height: 19.2px;
+    font-size: 16px;
+}
+
+.bottles 
+{
+    background-color: #FFFFFF;
+    margin-top: 80px;
+}
+
+
+/* Nous Rencontrer */
+
+li.menu-item-33 span:hover{
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.flower-title-container{
+    flex-basis: 25%;
+}
+
+.third-column-container{
+    flex-basis: 25%;
+}
+
+.p-meet-us{
+    line-height: 24px;
+}
+
+.wp-container-4{
+    border-bottom-right-radius: 400px 80px;
+    border-bottom-left-radius: 400px 80px;
+    background : #EDE2DA;
+}
+
+.text-meet-us
+{
+    font-size: 20px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+h2 
+{
+    font-family: 'syne', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+.h2-team 
+{
+    padding-top: 75px;
+    padding-bottom: 25px;
+}
+
+.team-column-container
+{
+    flex-basis: 20% ;
+}
+
+.team-megane-container
+{
+    flex-basis: 23% ;
+}
+
+.team-brooke-container
+{
+    flex-basis: 23% ;
+}
+
+.team-sylvie-container
+{
+    flex-basis: 23% ;
+}
+
+.team-flower-container
+{
+    flex-basis: 20% ;
+}
+
+.wp-image-48 {
+    height: 167px ;
+    width: 167px ;
+}
+
+.wp-image-49 {
+    height: 167px ;
+    width: 167px ;
+}
+
+.wp-image-50 {
+    height: 167px ;
+    width: 167px ;
+}
+
+.wp-element-caption{
+    font-weight: 700 ;
+    font-size: 20px ;
+}
+
+.name-team{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.job{
+    margin-top: 10px;
+    font-size: 20px ;
+    margin-bottom: 100px ;
+    padding-bottom: 105px;
+}
+
+.team-container{
+    margin-bottom: 75px ;
+}
+
+.contact-us{
+    margin-bottom: 47px;
+    padding-top: 75px;
+}
+
+.h1-meet-us{
+    color : #D2776A;
+    text-transform: uppercase;
+    font-family: 'Syne' ;
+    font-weight: 800 ;
+    line-height: 46px ;
+    font-size: 38px ;
+    margin-bottom: -7px ;
+    padding-top: 200px;
+    margin-top: 0px;
+    
+}
+
+.wpcf7-form-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-form{
+    width: 350px ;
+    height: 100px ;
+    border: none ;
+    border-radius: 5px ;
+    font-size: 15px ;
+    display: block;
+}
+
+.email-form{
+    width: 350px ;
+    height: 100px ;
+    border: none ;
+    border-radius: 5px ;
+    font-size: 15px ;
+    display: block;
+}
+
+.message-form {
+    width: 350px;
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 185px;
+    display: block;
+}
+
+.wpcf7-submit{
+    width: 198px;
+    height: 55px;
+    background: #E0B9B4;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    margin-top: 0px;
+    font-size: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+.wpcf7-submit:hover 
+{
+    background-color: #C02E44;
+    color: #FFFFFF;
+}
+
+
+input
+{
+    height: 4em;
+}
+
+.wp-image-76 
+{
+    margin-top: 30px;
+
+}
+
+.flower-title
+{
+    position: absolute;
+    right: 70%;
+    top: 190px;
+    width: 190px;
+}
+
+.flower-team
+{
+    position: absolute;
+    top: 775px;
+    left: 80%;
+    width: 200px;
+}
+
+.flower-contact-form
+{
+    position: absolute;
+    right: 54%;
+    top: 1500px;
+    width: 185px;
+    height: 178px;
+}
+
+.drinks-image
+{
+    margin-top: 165px;
+}
+
+/* Commander */
+
+.h1-order
+{
+    color : #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Syne';
+    font-weight: 800;
+    line-height: 46px;
+    font-size: 38px;
+    margin-bottom: 69px;
+    padding-top: 69px;
+}
+
+.background-green {
+    background-color: #3B8E46;
+}
+
+.h2-order {
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 7px;
+    margin-right: 550px;
+    background-color: #3B8E46;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h3-form-order {
+    font-size: 30px;
+    font-weight: 700;
+    width: 350px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+    gap: 300px;
+}
+
+.separator {
+    border: 0.5px solid #FFFFFF;
+    width: 50%;
+    margin: 40px auto;
+    display: block;
+}
+
+.separator-vertical {
+    position: absolute;
+    border-left: 0.5px solid #FFFFFF;
+    height: 47%; 
+    left: 50%; 
+}
+
+.fruit-column-order {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.delivery{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.legend-order {
+    position: absolute;
+    top: 350px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 115px;
+}
+
+.fruits-container-order {
+    display: flex;
+    justify-content: center;
+    padding-left: 250px;
+    margin-right: 250px;
+}
+
+.fraise-legend-order {
+    margin-left: 45px;
+}
+
+.pamplemousse-legend-order {
+    margin-top: 105px;
+    margin-left: 35px;
+}
+
+.framboise-legend-order {
+    margin-top: 105px;
+    margin-left: 55px;
+}
+
+.citron-legend-order {
+    margin-left: 45px;
+}
+
+.fruits-separator {
+    background-color: #3B8E46;
+}
+
+.wp-block-contact-form-7-contact-form-selector {
+    width: 100%;
+    background: #3B8E46;
+    max-width: none;
+    margin: 0 auto;
+    padding-bottom: 45px;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 95px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-row-quantity {
+    display: flex;
+    margin-top: 20px;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+}
+
+.input-quantity input {
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
+    font-weight: 400;
+    font-family: 'Inter';
+    font-size: 16px;
+    text-align: center;
+    z-index: 2;
+    margin-top: 15px;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+label {
+    font-weight: 600;
+}
+
+button {
+    background-color: #E7B8B8;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* footer */
+
+footer
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer nav
+{ 
+    margin: auto;
+}
+
+footer ul
+{
+    padding-left: 0;
+}
+
+footer nav a
+{
+    height: 60px ;
+} 
+
+.entry-footer
+{
+    display: none;
+}

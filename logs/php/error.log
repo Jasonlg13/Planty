@@ -1,0 +1,46 @@
+[19-Feb-2025 18:04:01 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\vermy\Local Sites\planty\app\public\wp-includes\class-wp-customize-widgets.php on line 923
+[19-Feb-2025 18:04:33 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\vermy\Local Sites\planty\app\public\wp-includes\class-wp-customize-widgets.php on line 923
+[19-Feb-2025 18:07:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function blankslate_the_html_classes() in C:\Users\vermy\Local Sites\planty\app\public\wp-content\themes\blankslate-child\header.php:2
+Stack trace:
+#0 C:\Users\vermy\Local Sites\planty\app\public\wp-includes\template.php(810): require_once()
+#1 C:\Users\vermy\Local Sites\planty\app\public\wp-includes\template.php(745): load_template('C:\\Users\\vermy\\...', true, Array)
+#2 C:\Users\vermy\Local Sites\planty\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\vermy\Local Sites\planty\app\public\wp-content\themes\blankslate\page.php(1): get_header()
+#4 C:\Users\vermy\Local Sites\planty\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\vermy\\...')
+#5 C:\Users\vermy\Local Sites\planty\app\public\wp-blog-header.php(19): require_once('C:\\Users\\vermy\\...')
+#6 C:\Users\vermy\Local Sites\planty\app\public\index.php(17): require('C:\\Users\\vermy\\...')
+#7 {main}
+  thrown in C:\Users\vermy\Local Sites\planty\app\public\wp-content\themes\blankslate-child\header.php on line 2
+[19-Feb-2025 18:10:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function blankslate_the_html_classes() in C:\Users\vermy\Local Sites\planty\app\public\wp-content\themes\blankslate-child\header.php:2
+Stack trace:
+#0 C:\Users\vermy\Local Sites\planty\app\public\wp-includes\template.php(810): require_once()
+#1 C:\Users\vermy\Local Sites\planty\app\public\wp-includes\template.php(745): load_template('C:\\Users\\vermy\\...', true, Array)
+#2 C:\Users\vermy\Local Sites\planty\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\vermy\Local Sites\planty\app\public\wp-content\themes\blankslate\page.php(1): get_header()
+#4 C:\Users\vermy\Local Sites\planty\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\vermy\\...')
+#5 C:\Users\vermy\Local Sites\planty\app\public\wp-blog-header.php(19): require_once('C:\\Users\\vermy\\...')
+#6 C:\Users\vermy\Local Sites\planty\app\public\index.php(17): require('C:\\Users\\vermy\\...')
+#7 {main}
+  thrown in C:\Users\vermy\Local Sites\planty\app\public\wp-content\themes\blankslate-child\header.php on line 2
+[19-Feb-2025 18:10:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function blankslate_child_the_html_classes() in C:\Users\vermy\Local Sites\planty\app\public\wp-content\themes\blankslate-child\header.php:2
+Stack trace:
+#0 C:\Users\vermy\Local Sites\planty\app\public\wp-includes\template.php(810): require_once()
+#1 C:\Users\vermy\Local Sites\planty\app\public\wp-includes\template.php(745): load_template('C:\\Users\\vermy\\...', true, Array)
+#2 C:\Users\vermy\Local Sites\planty\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\vermy\Local Sites\planty\app\public\wp-content\themes\blankslate\page.php(1): get_header()
+#4 C:\Users\vermy\Local Sites\planty\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\vermy\\...')
+#5 C:\Users\vermy\Local Sites\planty\app\public\wp-blog-header.php(19): require_once('C:\\Users\\vermy\\...')
+#6 C:\Users\vermy\Local Sites\planty\app\public\index.php(17): require('C:\\Users\\vermy\\...')
+#7 {main}
+  thrown in C:\Users\vermy\Local Sites\planty\app\public\wp-content\themes\blankslate-child\header.php on line 2
+[19-Feb-2025 18:10:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function blankslate_html_classes() in C:\Users\vermy\Local Sites\planty\app\public\wp-content\themes\blankslate-child\header.php:2
+Stack trace:
+#0 C:\Users\vermy\Local Sites\planty\app\public\wp-includes\template.php(810): require_once()
+#1 C:\Users\vermy\Local Sites\planty\app\public\wp-includes\template.php(745): load_template('C:\\Users\\vermy\\...', true, Array)
+#2 C:\Users\vermy\Local Sites\planty\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\vermy\Local Sites\planty\app\public\wp-content\themes\blankslate\page.php(1): get_header()
+#4 C:\Users\vermy\Local Sites\planty\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\vermy\\...')
+#5 C:\Users\vermy\Local Sites\planty\app\public\wp-blog-header.php(19): require_once('C:\\Users\\vermy\\...')
+#6 C:\Users\vermy\Local Sites\planty\app\public\index.php(17): require('C:\\Users\\vermy\\...')
+#7 {main}
+  thrown in C:\Users\vermy\Local Sites\planty\app\public\wp-content\themes\blankslate-child\header.php on line 2
